@@ -74,8 +74,8 @@ function draw6bpm(firstRow, secondRow) {
 	const cycle = 10000;
 	drawCycle6bpm(firstRow);
 	setTimeout(() => drawCycle6bpm(secondRow), cycle);
-	setTimeout(() => playBell(), cycle * 2);
-	setTimeout(() => playBell(), sessionDuration - cycle * 2);
+	setTimeout(() => playBell(), cycle * 2 - 500);
+	setTimeout(() => playBell(), sessionDuration - cycle * 2 - 500);
 	setInterval(function(){
 		removeAllChildren();
 		drawCycle6bpm(firstRow);
@@ -87,8 +87,8 @@ function draw8bpm(firstRow, secondRow) {
 	const cycle = 7500;
 	drawCycle8bpm(firstRow);
 	setTimeout(() => drawCycle8bpm(secondRow), cycle);
-	setTimeout(() => playBell(), cycle * 2);
-	setTimeout(() => playBell(), sessionDuration - cycle * 2);
+	setTimeout(() => playBell(), cycle * 2 - 500);
+	setTimeout(() => playBell(), sessionDuration - cycle * 2 - 500);
 	setInterval(function(){
 		removeAllChildren();
 		drawCycle8bpm(firstRow);
@@ -97,11 +97,11 @@ function draw8bpm(firstRow, secondRow) {
 }
 
 function draw10bpm(firstRow, secondRow) {
-	const cycle = 7500;
+	const cycle = 6000;
 	drawCycle10bpm(firstRow);
 	setTimeout(() => drawCycle10bpm(secondRow), cycle);
-	setTimeout(() => playBell(), cycle * 2);
-	setTimeout(() => playBell(), sessionDuration - cycle * 2);
+	setTimeout(() => playBell(), cycle * 2 - 500);
+	setTimeout(() => playBell(), sessionDuration - cycle * 2 - 500);
 	setInterval(function(){
 		removeAllChildren();
 		drawCycle10bpm(firstRow);
@@ -113,8 +113,8 @@ function draw12bpm(firstRow, secondRow) {
 	const cycle = 5000;
 	drawCycle12bpm(firstRow);
 	setTimeout(() => drawCycle12bpm(secondRow), cycle);
-	setTimeout(() => playBell(), cycle * 2);
-	setTimeout(() => playBell(), sessionDuration - cycle * 2);
+	setTimeout(() => playBell(), cycle * 2 - 500);
+	setTimeout(() => playBell(), sessionDuration - cycle * 2 - 500);
 	setInterval(function(){
 		removeAllChildren();
 		drawCycle12bpm(firstRow);

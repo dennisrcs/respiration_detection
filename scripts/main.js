@@ -27,11 +27,27 @@ $(document).ready(function(){
 	}
 	
 	$(".buttons-wrapper button").click(function(){
-		window.location.href = "resting.html"
-		sessionStorage.setItem("task", "resting");
+		$("#session_starting_label").css("visibility", "visible");
 		
-		const sessionStartTime = getFormattedDate();
-		sessionStorage.setItem("start_time_session" + sessionNumberInt, sessionStartTime);
+		var counter = 2;
+		var interval = setInterval(function(){
+			$("#session_start_time").text(counter + "");
+			counter--;
+			
+			if (counter === 0) {
+				clearInterval(interval);
+			}
+		}, 1000);
+		
+		setTimeout(() => {
+			window.location.href = "resting.html"
+			sessionStorage.setItem("task", "resting");
+			
+			const sessionStartTime = getFormattedDate();
+			sessionStorage.setItem("start_time_session" + sessionNumberInt, sessionStartTime);
+		}, 3000);
+		
+		
 	});
 	
 	function getFormattedDate() {

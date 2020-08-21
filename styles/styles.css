@@ -1,0 +1,18 @@
+.col-lg-12 h2 {
+	color: red
+}
+
+.col-lg-12.instructions h3{
+	color: red
+}
+
+.in-out-wrapper h2 {
+	display: inline-block;
+	padding-right: 20px;
+	font-size: 64pt;
+}
+
+.rows-wrapper {
+	height: 300px;
+}
+

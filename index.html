@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PSI Lab Experiment</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Session Info</h1>
+      </div>
+	  <div class="col-lg-12">
+		<form action="main.html" id="session-info-form">
+		  <div class="form-group">
+			<label for="participant_id">Participant ID</label>
+			<input type="text" class="form-control" id="participant_id" placeholder="Enter Participant ID">
+		  </div>
+		  <div class="form-group">
+			<label for="date">Date</label>
+			<input type="text" class="form-control" id="date" placeholder="Enter the date">
+		  </div>
+		  <div class="form-group">
+			<label for="time">Time</label>
+			<input type="text" class="form-control" id="time" placeholder="Enter the time">
+		  </div>
+		  <div class="form-group">
+			<label for="session_duration">Session duration (seconds)</label>
+			<input type="text" class="form-control" id="session_duration" placeholder="Enter session duration (in seconds)" value="180">
+		  </div>
+		  <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	  </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

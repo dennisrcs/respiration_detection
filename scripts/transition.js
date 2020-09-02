@@ -7,5 +7,5 @@ $(document).ready(function(){
 	$("#second-inst").text(instructions[2]);
 	$("#third-inst").text(instructions[3]);
 	
-	setTimeout(() => window.location.href = task + ".html", 20000);
+	setTimeout(() => window.location.href = task + ".html", 5000);
 });
